@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+  <div class="container">
+    <img class="cifaka" src="images/logo.png" alt="CIFAKA">
+  </div>
+
+  <div class="container2">
+   <div class="elementToFadeInAndOut">
+    <img class="cifaka2" src="images/logo.png" alt="CIFAKA">
+   </div>
+  </div>
+
+  <div class="container3">
+    <img class="cifaka3" src="images/logo.png" alt="CIFAKA">
+  </div>
+
+  <p class="back">
+    <img src="images/back.png" alt="back">
+  </p> 
+
+  <nav>
+    <a href="about.html" class="btn">About</a><br>
+    <a href="works.html" class="btn">Works</a><br>
+    <a href="ourshops.html" class="btn">Our Shops</a><br>
+    <a href="recruit.html" class="btn">Recruit</a><br><br>
+    <a href="contact.html" class="btn">Contact</a>
+  </nav>
+
+  <div class="news">
+    <img src="images/news.png" width="50px" height="50px" alt="news">
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+  <script>
+  $(function() {
+
+    var rotate = function(news, angle) {
+    news.css({
+    "transform" : "rotate("+angle+"deg)"
+    });
+    }
+    
+    $(window).scroll(function(){
+    rotate($(".news"), $(window).scrollTop()*0.6);
+    })
+    
+    });
+
+  </script>
